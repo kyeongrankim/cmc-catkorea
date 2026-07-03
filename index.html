@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CMC-CAT Korea</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; color:#111; background:#fff; }
+    header { position:fixed; top:0; width:100%; background:rgba(255,255,255,.95); border-bottom:1px solid #eee; z-index:10; }
+    nav { max-width:1100px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:18px 24px; }
+    nav a { margin-left:22px; text-decoration:none; color:#111; font-size:14px; }
+    .logo { font-weight:700; letter-spacing:1px; }
+    .hero { min-height:90vh; display:flex; align-items:center; justify-content:center; text-align:center; background:#0d0d0d; color:white; padding:80px 24px; }
+    .hero h1 { font-size:56px; margin:0; letter-spacing:2px; }
+    .hero p { font-size:20px; color:#d8d8d8; margin:20px 0 35px; }
+    .btn { background:#c8a96a; color:#111; padding:14px 28px; text-decoration:none; border-radius:40px; font-weight:700; }
+    section { max-width:1100px; margin:auto; padding:90px 24px; }
+    h2 { font-size:34px; margin-bottom:18px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:24px; }
+    .card { border:1px solid #eee; padding:28px; border-radius:18px; background:#fafafa; }
+    .card h3 { margin-top:0; }
+    .dark { background:#111; color:white; max-width:none; }
+    .dark .inner { max-width:1100px; margin:auto; padding:90px 24px; }
+    footer { text-align:center; padding:40px 20px; background:#0d0d0d; color:#aaa; }
+    @media (max-width:700px) {
+      .hero h1 { font-size:38px; }
+      nav { flex-direction:column; gap:12px; }
+      nav a { margin:0 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">CMC-CAT KOREA</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#certification">Certification</a>
+      <a href="#education">Education</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>CMC-CAT Korea</h1>
+    <p>Official Branch · Professional Hair Education · International Certification</p>
+    <a class="btn" href="#apply">교육 신청하기</a>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About CMC-CAT Korea</h2>
+  <p>
+    CMC-CAT Korea는 국제 헤어 교육과 전문 자격 인증을 기반으로,
+    미용 기술인의 성장과 글로벌 네트워크 확장을 지원하는 한국 공식 지부입니다.
+  </p>
+</section>
+
+<section id="certification">
+  <h2>Certification</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>CAT Basic</h3>
+      <p>헤어 기술의 기본 구조와 국제 기준을 학습하는 과정입니다.</p>
+    </div>
+    <div class="card">
+      <h3>Instructor Course</h3>
+      <p>교육자와 강사를 위한 전문 지도 과정입니다.</p>
+    </div>
+    <div class="card">
+      <h3>Master Course</h3>
+      <p>고급 기술과 국제 교육 역량을 강화하는 심화 과정입니다.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="dark">
+  <div class="inner">
+    <h2>Education Program</h2>
+    <p>
+      CMC-CAT Korea는 세미나, 기술 교육, 자격 과정, 국제 교류 프로그램을 운영합니다.
+      교육 일정은 추후 공지사항을 통해 안내됩니다.
+    </p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="grid">
+    <div class="card">Seminar</div>
+    <div class="card">Competition</div>
+    <div class="card">Certification</div>
+    <div class="card">Global Network</div>
+  </div>
+</section>
+
+<section id="apply">
+  <h2>Education Application</h2>
+  <p>교육 신청은 아래 버튼을 통해 접수됩니다.</p>
+  <a class="btn" href="https://forms.gle/" target="_blank">Google Form 연결 예정</a>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: info@cmc-catkorea.com</p>
+  <p>Website: cmc-catkorea.com</p>
+</section>
+
+<footer>
+  © 2026 CMC-CAT Korea. All Rights Reserved.
+</footer>
+
+</body>
+</html>
