@@ -1,1 +1,2 @@
-Upload all files in this folder to the root of the GitHub repository. Do not upload the folder itself.
+CMC-CAT Korea v3 upload package
+Upload index.html, .nojekyll, README_UPLOAD.txt, and assets folder to the root of the GitHub repository.
