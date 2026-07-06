@@ -1,3 +1,1 @@
-Upload the contents of this folder to the root of your GitHub repository.
-Upload: index.html, .nojekyll, assets folder, README_UPLOAD.txt
-Do not upload the outer cmc-catkorea-v4 folder itself.
+압축을 푼 뒤 cmc-catkorea-v5 폴더 안의 index.html, .nojekyll, README_UPLOAD.txt, assets 폴더를 GitHub 저장소 루트에 업로드하세요. 폴더 자체를 올리지 말고 안의 파일만 올립니다.

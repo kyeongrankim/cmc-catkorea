@@ -1,162 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CMC-CAT Korea | Official Korean Branch</title>
-  <meta name="description" content="CMC-CAT Korea 공식 한국지부. 국제 미용 교육, 자격 인증, 세계대회 및 글로벌 뷰티 네트워크." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CMC-CAT Korea Official Branch</title>
+  <meta name="description" content="CMC-CAT Korea 공식 홈페이지. 국제 미용 교육, CMC 세계대회, CAT 자격 인증, K-Beauty 글로벌 네트워크." />
+  <style>
+    :root{--black:#050505;--ink:#121212;--gold:#c8a96a;--gold2:#ead19a;--muted:#777;--line:#e8e0d5;--cream:#f7f2e9;--white:#fff;}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,'Noto Sans KR',sans-serif;color:var(--ink);background:var(--white);line-height:1.65}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{font-family:inherit}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(5,5,5,.70);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.12)}
+    .nav-inner{max-width:1180px;margin:0 auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{color:#fff;font-weight:800;letter-spacing:.08em;font-size:15px}.brand span{color:var(--gold)}
+    .menu{display:flex;gap:22px;align-items:center}.menu a{color:rgba(255,255,255,.86);font-size:13px;letter-spacing:.04em}.menu a:hover{color:var(--gold2)}
+    .hero{min-height:100vh;position:relative;overflow:hidden;background:#000;color:#fff;display:grid;place-items:center}.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}.slide.active{opacity:1}.slide img{width:100%;height:100%;object-fit:cover;object-position:center}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.68),rgba(0,0,0,.25),rgba(0,0,0,.58));z-index:1}.hero-content{position:relative;z-index:2;max-width:1040px;width:100%;padding:120px 24px 80px}.eyebrow{color:var(--gold2);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:13px;margin-bottom:18px}.hero h1{font-size:clamp(44px,8vw,92px);line-height:1.02;margin:0 0 20px;letter-spacing:-.05em}.hero p{font-size:clamp(17px,2vw,24px);max-width:760px;color:rgba(255,255,255,.86);margin:0 0 34px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 24px;border-radius:999px;font-weight:800;border:1px solid rgba(255,255,255,.28);transition:.25s ease;cursor:pointer}.btn.gold{background:var(--gold);color:#111;border-color:var(--gold)}.btn.ghost{color:#fff;background:rgba(255,255,255,.10)}.btn:hover{transform:translateY(-2px)}.stats{position:absolute;z-index:2;left:0;right:0;bottom:32px;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:0 20px}.stat{min-width:150px;padding:18px 22px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.28);backdrop-filter:blur(10px);border-radius:18px;text-align:center}.stat strong{display:block;font-size:26px;color:var(--gold2);line-height:1}.stat small{color:rgba(255,255,255,.76);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+    section{padding:95px 22px}.wrap{max-width:1180px;margin:0 auto}.section-title{font-size:clamp(34px,5vw,58px);line-height:1.08;letter-spacing:-.04em;margin:0 0 18px}.lead{font-size:18px;color:#555;max-width:860px}.split{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}.panel{background:var(--cream);border:1px solid var(--line);border-radius:30px;padding:34px}.quote{font-size:24px;font-weight:800;color:#111;line-height:1.35}.gold-line{width:70px;height:3px;background:var(--gold);margin:22px 0}.dark{background:#070707;color:#fff}.dark .lead{color:rgba(255,255,255,.72)}.dark .panel{background:#111;border-color:rgba(255,255,255,.10)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}.card{border:1px solid var(--line);border-radius:26px;padding:28px;background:#fff}.card h3{margin:0 0 10px;font-size:22px}.card p{margin:0;color:#666}.dark .card{background:#111;border-color:rgba(255,255,255,.12)}.dark .card p{color:rgba(255,255,255,.68)}
+    .timeline{position:relative;margin-top:38px}.timeline:before{content:"";position:absolute;left:22px;top:0;bottom:0;width:2px;background:var(--gold)}.tl{position:relative;padding-left:72px;margin:0 0 30px}.tl:before{content:"";position:absolute;left:13px;top:8px;width:20px;height:20px;background:var(--gold);border-radius:50%;box-shadow:0 0 0 8px rgba(200,169,106,.15)}.tl b{font-size:22px;color:var(--gold)}.tl p{margin:4px 0 0;color:#555}.dark .tl p{color:rgba(255,255,255,.70)}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}.gitem{position:relative;border-radius:22px;overflow:hidden;min-height:210px;cursor:pointer;background:#111}.gitem img{width:100%;height:100%;object-fit:cover;transition:.45s ease}.gitem:hover img{transform:scale(1.06)}.gitem span{position:absolute;left:14px;bottom:14px;color:#fff;background:rgba(0,0,0,.45);padding:8px 12px;border-radius:999px;font-weight:700;font-size:12px}.gitem.wide{grid-column:span 2}.gitem.tall{grid-row:span 2;min-height:434px}
+    .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}.contact-box{border:1px solid var(--line);border-radius:22px;padding:22px;background:#fff}.contact-box b{display:block;color:var(--gold);margin-bottom:8px}.footer{background:#050505;color:rgba(255,255,255,.65);padding:36px 22px;text-align:center}
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.86);z-index:50;display:none;align-items:center;justify-content:center;padding:24px}.modal.show{display:flex}.modal-box{width:min(1000px,96vw);position:relative}.modal video{width:100%;max-height:82vh;background:#000;border-radius:20px}.close{position:absolute;right:0;top:-46px;background:#fff;color:#000;border:0;border-radius:999px;padding:10px 15px;font-weight:900;cursor:pointer}.lightbox img{max-width:min(1100px,96vw);max-height:88vh;border-radius:18px}.lightbox .close{right:12px;top:12px;position:fixed}
+    @media(max-width:860px){.menu{display:none}.split{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gitem.wide{grid-column:span 2}.contact-grid{grid-template-columns:1fr 1fr}.stats{position:relative;bottom:auto;margin-top:-110px;padding-bottom:26px}.hero-content{padding-bottom:120px}.hero h1{font-size:48px}}
+    @media(max-width:560px){.gallery{grid-template-columns:1fr}.gitem.wide{grid-column:span 1}.contact-grid{grid-template-columns:1fr}.stat{width:46%;min-width:130px}.hero-actions .btn{width:100%}}
+  </style>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top">CMC-CAT KOREA</a>
-    <nav class="main-nav" aria-label="주요 메뉴">
-      <a href="#about">About</a>
-      <a href="#history">History</a>
-      <a href="#certification">Certification</a>
-      <a href="#education">Education</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home">CMC-CAT <span>KOREA</span></a>
+      <nav class="menu">
+        <a href="#about">ABOUT</a><a href="#history">HISTORY</a><a href="#certification">CERTIFICATION</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" aria-label="CMC-CAT Korea 메인">
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/images/uk-competition.jpg">
-        <source src="assets/videos/hero-competition.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-overlay"></div>
-      <div class="hero-content reveal show">
-        <p class="eyebrow">Official Korean Branch</p>
-        <h1>CMC-CAT Korea</h1>
-        <p class="hero-copy">International Hair Education · Global Beauty Network · Professional Certification</p>
-        <div class="hero-actions">
-          <a class="btn btn-gold" href="#certification">국제자격 안내</a>
-          <a class="btn btn-outline" href="#contact">교육 문의</a>
-        </div>
+  <main id="home" class="hero">
+    <div class="slide active"><img src="assets/images/hero-awards.jpg" alt="CMC-CAT Korea Awards"></div>
+    <div class="slide"><img src="assets/images/hero-uk.jpg" alt="CMC UK World Competition"></div>
+    <div class="slide"><img src="assets/images/hero-team.jpg" alt="CMC-CAT Korea Team"></div>
+    <div class="hero-content">
+      <div class="eyebrow">Official Korean Branch</div>
+      <h1>CMC-CAT Korea</h1>
+      <p>International Hair Education · Global Beauty Network · Professional Certification</p>
+      <div class="hero-actions">
+        <a class="btn gold" href="#certification">국제자격 안내</a>
+        <a class="btn ghost" href="#contact">교육 신청 문의</a>
+        <button class="btn ghost" onclick="openMovie()">▶ Watch CMC Film</button>
       </div>
-      <div class="hero-stats" aria-label="핵심 정보">
-        <div><strong>1937</strong><span>Founded in France</span></div>
-        <div><strong>35+</strong><span>Countries Network</span></div>
-        <div><strong>K-Beauty</strong><span>Global Exchange</span></div>
-      </div>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="section-head reveal">
-        <p class="eyebrow">About</p>
-        <h2>Connecting Hair Professionals Worldwide</h2>
-        <p>CMC-CAT Korea는 국제 미용 교육과 전문 자격 인증을 기반으로, 한국 미용인의 기술과 K-Beauty의 가치를 세계와 연결합니다.</p>
-      </div>
-      <div class="about-grid">
-        <article class="about-card reveal">
-          <h3>CMC-CAT</h3>
-          <p>1937년 프랑스에서 시작된 국제 미용 네트워크로, 현재 이탈리아 본부를 중심으로 세계 여러 국가의 지부와 함께 문화교류와 기술 발전을 이어가고 있습니다.</p>
-        </article>
-        <article class="about-card reveal">
-          <h3>Korea Official Branch</h3>
-          <p>2017년 김경란 회장이 한국지부 회장으로 추인된 이후, CMC-CAT Korea는 국제대회, 세미나, 공모전, 교육 활동을 통해 K-Beauty를 알리고 있습니다.</p>
-        </article>
-        <article class="about-card reveal">
-          <h3>Global Mission</h3>
-          <p>기술 교육, 국제 자격, 세계대회, 문화교류를 통해 미용인의 성장을 지원하고, 글로벌 뷰티 네트워크를 확장합니다.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section president-section">
-      <div class="president-wrap reveal">
-        <img src="assets/images/korea-awards.jpg" alt="CMC-CAT Korea 국내 공모전 시상식" />
-        <div>
-          <p class="eyebrow">Message</p>
-          <h2>한국 미용인의 기술과 열정을 세계로</h2>
-          <p>CMC-CAT Korea는 세계 미용인의 교류와 성장을 위한 공식 플랫폼으로, 국제 기준의 교육과 대회를 통해 한국 미용의 위상을 높이고자 합니다.</p>
-          <p class="signature">— 한국회장 김경란</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section history-section" id="history">
-      <div class="section-head reveal">
-        <p class="eyebrow">History</p>
-        <h2>CMC-CAT Korea Timeline</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item reveal"><span>1937</span><p>프랑스에서 CMC-CAT 창립</p></div>
-        <div class="timeline-item reveal"><span>2006</span><p>대한민국 부산 BEXCO CMC 세계미용대회 유치</p></div>
-        <div class="timeline-item reveal"><span>2017</span><p>김경란 회장 한국지부 회장 추인, 일본 CAT 대회 및 이탈리아 CMC 세계대회 참여</p></div>
-        <div class="timeline-item reveal"><span>2018</span><p>제2회 공모전 개최 및 세계 회장단 회의 참석</p></div>
-        <div class="timeline-item reveal"><span>2019</span><p>정기총회 및 일본 오사카 세계대회 공동개최</p></div>
-        <div class="timeline-item reveal"><span>2021</span><p>러시아 온라인 콘테스트 CMC 세계대회 공동개최</p></div>
-        <div class="timeline-item reveal"><span>2023</span><p>살롱아트 공모전 개최</p></div>
-        <div class="timeline-item reveal"><span>2024</span><p>전국뷰티살롱아트 공모전 및 이탈리아 세계미용대회 개최</p></div>
-        <div class="timeline-item reveal"><span>2025</span><p>전국뷰티살롱아트 공모전 및 영국 세계미용대회 개최</p></div>
-      </div>
-    </section>
-
-    <section class="section certification-section" id="certification">
-      <div class="section-head reveal">
-        <p class="eyebrow">Certification</p>
-        <h2>Education & Certification</h2>
-        <p>국제 기준의 헤어 교육과 전문 자격 과정을 준비합니다.</p>
-      </div>
-      <div class="cards">
-        <article class="card reveal"><h3>CAT Basic</h3><p>국제 미용 기술의 기본 구조와 기준을 학습하는 과정입니다.</p></article>
-        <article class="card reveal"><h3>Instructor Course</h3><p>교육자와 강사를 위한 전문 지도 역량 강화 과정입니다.</p></article>
-        <article class="card reveal"><h3>Master Course</h3><p>고급 기술과 국제 교육 역량을 심화하는 전문가 과정입니다.</p></article>
-      </div>
-    </section>
-
-    <section class="section education-section" id="education">
-      <div class="education-box reveal">
-        <div>
-          <p class="eyebrow">Education</p>
-          <h2>교육 일정 및 신청</h2>
-          <p>세미나, 기술 교육, 자격 과정, 국제 교류 프로그램은 공지 후 접수됩니다.</p>
-        </div>
-        <a class="btn btn-gold" href="#contact">교육 문의하기</a>
-      </div>
-    </section>
-
-    <section class="section gallery-section" id="gallery">
-      <div class="section-head reveal">
-        <p class="eyebrow">Gallery</p>
-        <h2>World Competition & CAT Korea</h2>
-        <p>세계대회, 국내 공모전, 시상식, 교육 활동의 기록입니다.</p>
-      </div>
-      <div class="gallery-grid">
-        <button class="gallery-item reveal" data-src="assets/images/uk-competition.jpg"><img src="assets/images/uk-competition.jpg" alt="영국 세계대회" /><span>UK World Competition</span></button>
-        <button class="gallery-item reveal" data-src="assets/images/italy-awards.png"><img src="assets/images/italy-awards.png" alt="이탈리아 세계대회 시상식" /><span>Italy Awards</span></button>
-        <button class="gallery-item reveal" data-src="assets/images/group-photo.jpg"><img src="assets/images/group-photo.jpg" alt="CAT Korea 단체사진" /><span>CAT Korea</span></button>
-        <button class="gallery-item reveal" data-src="assets/images/trophies.jpg"><img src="assets/images/trophies.jpg" alt="트로피" /><span>Awards</span></button>
-        <button class="gallery-item reveal" data-src="assets/images/korea-awards.jpg"><img src="assets/images/korea-awards.jpg" alt="국내대회 시상식" /><span>Korea Competition</span></button>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="contact-inner reveal">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>CMC-CAT Korea</h2>
-          <p>교육, 국제자격, 공모전 및 세미나 문의를 환영합니다.</p>
-        </div>
-        <div class="contact-list">
-          <p><strong>Tel</strong> 052-201-3930</p>
-          <p><strong>Email</strong> cat-korea@naver.com</p>
-          <p><strong>Instagram</strong> @cmc_cat_korea</p>
-          <p><strong>Address</strong> 울산광역시 동구 봉수로 307</p>
-        </div>
-      </div>
-    </section>
+    </div>
+    <div class="stats"><div class="stat"><strong>1937</strong><small>Founded</small></div><div class="stat"><strong>35+</strong><small>Countries</small></div><div class="stat"><strong>86+</strong><small>Years</small></div></div>
   </main>
 
-  <footer class="site-footer">© 2026 CMC-CAT Korea. All Rights Reserved.</footer>
+  <section id="about">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow" style="color:var(--gold)">About CMC-CAT</div>
+        <h2 class="section-title">세계와 연결되는 K-Beauty 미용 네트워크</h2>
+        <p class="lead">CMC-CAT Korea는 국제 미용 네트워크를 기반으로 미용 기술인의 성장, 문화교류, 국제 자격 인증, K-Beauty의 세계화를 추진하는 한국 공식 지부입니다.</p>
+        <div class="gold-line"></div>
+        <p>1937년 프랑스에서 시작된 CMC-CAT는 현재 이탈리아 본부를 중심으로 여러 국가의 지부가 함께 활동하고 있습니다. 한국지부는 김경란 회장을 중심으로 국제대회, 교육, 세미나, 공모전 등을 운영하며 글로벌 미용 교류를 이어가고 있습니다.</p>
+      </div>
+      <div class="panel"><img src="assets/images/president-message.jpg" alt="President message"></div>
+    </div>
+  </section>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" type="button">×</button>
-    <img alt="갤러리 확대 이미지" />
-  </div>
+  <section class="dark" id="history">
+    <div class="wrap">
+      <div class="eyebrow">History</div>
+      <h2 class="section-title">CMC-CAT Korea Timeline</h2>
+      <p class="lead">국제 무대와 함께 성장해 온 CMC-CAT Korea의 주요 활동입니다.</p>
+      <div class="timeline">
+        <div class="tl"><b>1937</b><p>프랑스에서 CMC-CAT 창립</p></div>
+        <div class="tl"><b>2006</b><p>대한민국 부산 BEXCO에서 CMC 세계미용대회 유치</p></div>
+        <div class="tl"><b>2017</b><p>김경란 회장 한국지부 회장 추인, 일본 CAT 대회 및 이탈리아 CMC 세계대회 공동개최</p></div>
+        <div class="tl"><b>2019</b><p>정기총회 및 일본 오사카 세계대회 공동개최</p></div>
+        <div class="tl"><b>2024</b><p>전국뷰티살롱아트 공모전 및 이탈리아 세계미용대회 개최</p></div>
+        <div class="tl"><b>2025</b><p>영국 세계미용대회 및 전국뷰티살롱아트 공모전 개최</p></div>
+      </div>
+    </div>
+  </section>
 
-  <script src="assets/js/script.js"></script>
+  <section id="certification">
+    <div class="wrap">
+      <div class="eyebrow" style="color:var(--gold)">Certification & Education</div>
+      <h2 class="section-title">International Certification</h2>
+      <p class="lead">CMC-CAT Korea는 국제 기준의 미용 교육과 자격 인증을 통해 전문 미용인의 글로벌 성장을 지원합니다.</p>
+      <div class="cards">
+        <div class="card"><h3>CAT Basic</h3><p>기본 기술과 국제 기준을 이해하는 입문 과정입니다.</p></div>
+        <div class="card"><h3>Instructor Course</h3><p>교육자와 지도자를 위한 전문 과정입니다.</p></div>
+        <div class="card"><h3>Master Course</h3><p>고급 기술과 국제 교육 역량을 강화하는 심화 과정입니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="gallery">
+    <div class="wrap">
+      <div class="eyebrow">Gallery</div>
+      <h2 class="section-title">World Competition & Korea Activities</h2>
+      <p class="lead">세계대회, 국내 공모전, 시상식, 교육 활동을 한눈에 볼 수 있습니다.</p>
+      <div class="gallery">
+        <div class="gitem wide" onclick="openImage(this)"><img src="assets/images/hero-awards.jpg"><span>Domestic Awards</span></div>
+        <div class="gitem" onclick="openImage(this)"><img src="assets/images/hero-uk.jpg"><span>UK World Competition</span></div>
+        <div class="gitem" onclick="openImage(this)"><img src="assets/images/gallery-italy.jpg"><span>Italy Ceremony</span></div>
+        <div class="gitem" onclick="openImage(this)"><img src="assets/images/gallery-awards.jpg"><span>Awards</span></div>
+        <div class="gitem wide" onclick="openImage(this)"><img src="assets/images/hero-team.jpg"><span>Team Korea</span></div>
+        <div class="gitem" onclick="openImage(this)"><img src="assets/images/extra-gallery-1.jpg"><span>Activity</span></div>
+        <div class="gitem" onclick="openImage(this)"><img src="assets/images/extra-gallery-2.jpg"><span>Seminar</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="eyebrow" style="color:var(--gold)">Contact</div>
+      <h2 class="section-title">Education Application & Inquiry</h2>
+      <p class="lead">교육 신청 및 협회 활동 문의는 아래 연락처로 가능합니다.</p>
+      <div class="contact-grid">
+        <div class="contact-box"><b>Tel</b>052-201-3930</div>
+        <div class="contact-box"><b>Email</b>cat-korea@naver.com</div>
+        <div class="contact-box"><b>Instagram</b>@cmc_cat_korea</div>
+        <div class="contact-box"><b>Address</b>울산광역시 동구 봉수로 307</div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">© 2026 CMC-CAT Korea. All Rights Reserved.</footer>
+
+  <div class="modal" id="movieModal"><div class="modal-box"><button class="close" onclick="closeMovie()">닫기 ✕</button><video id="cmcVideo" controls playsinline><source src="assets/videos/cmc-film.mp4" type="video/mp4"></video></div></div>
+  <div class="modal lightbox" id="lightbox"><button class="close" onclick="closeImage()">닫기 ✕</button><img id="lightboxImg" src="" alt="gallery image"></div>
+  <script>
+    const slides=[...document.querySelectorAll('.slide')];let s=0;setInterval(()=>{slides[s].classList.remove('active');s=(s+1)%slides.length;slides[s].classList.add('active')},5200);
+    function openMovie(){document.getElementById('movieModal').classList.add('show');const v=document.getElementById('cmcVideo');v.currentTime=0;v.play();}
+    function closeMovie(){const m=document.getElementById('movieModal');const v=document.getElementById('cmcVideo');v.pause();m.classList.remove('show');}
+    function openImage(el){document.getElementById('lightboxImg').src=el.querySelector('img').src;document.getElementById('lightbox').classList.add('show');}
+    function closeImage(){document.getElementById('lightbox').classList.remove('show');}
+  </script>
 </body>
 </html>
